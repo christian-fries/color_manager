@@ -1,0 +1,46 @@
+{namespace bm=CHF\BackendModule\ViewHelpers}
+
+<f:layout name="Default" />
+
+<f:section name="headline">
+	<h1><f:translate key="color.colors">Colors</f:translate></h1>
+</f:section>
+
+<f:section name="content">
+	<f:flashMessages />
+
+	<div class="panel panel-space panel-default recordlist">
+		<div class="panel-heading">
+			<f:translate key="module.admin.colors">Colors</f:translate>
+		</div>
+		<div class="table-fit">
+			<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<th class="col-icon" width="35">
+							<bm:button.addRecord table="tx_colormanager_domain_model_color" pid="{storagePid}" returnUrl="{returnUrl}" />
+						</th>
+						<th><f:translate key="color.name" /></th>
+						<th><f:translate key="color.color" /></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<f:for each="{colors}" as="color">
+						<tr>
+							<td class="col-icon" style="background: {color.color};"></td>
+							<td><bm:link.editRecord object="{color}" table="tx_colormanager_domain_model_color" returnUrl="{returnUrl}"> {color.name}</bm:link.editRecord></td>
+							<td>{color.color}</td>
+							<td class="col-control">
+								<div class="btn-group" role="group">
+									<bm:button.editRecord object="{color}" table="tx_colormanager_domain_model_color" returnUrl="{returnUrl}" />
+									<bm:button.removeRecord object="{color}" table="tx_colormanager_domain_model_color" identifier="name" />
+								</div>
+							</td>
+						</tr>
+					</f:for>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</f:section>

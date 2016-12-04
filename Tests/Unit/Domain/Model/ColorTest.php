@@ -26,11 +26,11 @@ class ColorTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getTitleReturnsInitialValueForString()
+    public function getNameReturnsInitialValueForString()
     {
         self::assertSame(
             '',
-            $this->subject->getTitle()
+            $this->subject->getName()
         );
 
     }
@@ -38,13 +38,13 @@ class ColorTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function setTitleForStringSetsTitle()
+    public function setNameForStringSetsName()
     {
-        $this->subject->setTitle('Conceived at T3CON10');
+        $this->subject->setName('Conceived at T3CON10');
 
         self::assertAttributeEquals(
             'Conceived at T3CON10',
-            'title',
+            'name',
             $this->subject
         );
 

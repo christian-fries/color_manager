@@ -17,7 +17,7 @@ class Tca
     public function colorTitle(&$parameters, $parentObject)
     {
         $record = \TYPO3\CMS\Backend\Utility\BackendUtility::getRecord($parameters['table'], $parameters['row']['uid']);
-        $defaultTitle = $record['title'];
+        $defaultTitle = $record['name'];
         $newTitle = $defaultTitle . ' (' . strip_tags($record['color']) . ')';
         $parameters['title'] = $newTitle;
     }

@@ -3,14 +3,26 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2016-12-01T19:11:24Z" product-name="color_manager">
 		<header/>
 		<body>
-			<trans-unit id="tx_colormanager_domain_model_color">
+			<trans-unit id="color">
 				<source>Color</source>
 			</trans-unit>
-			<trans-unit id="tx_colormanager_domain_model_color.title">
-				<source>Title</source>
+			<trans-unit id="color.name">
+				<source>Name</source>
 			</trans-unit>
-			<trans-unit id="tx_colormanager_domain_model_color.color">
+			<trans-unit id="color.color">
 				<source>Color</source>
+			</trans-unit>
+			<trans-unit id="color.colors">
+				<source>Colors</source>
+			</trans-unit>
+			<trans-unit id="color.new">
+				<source>Create new color</source>
+			</trans-unit>
+			<trans-unit id="configuration.pid.title">
+				<source>No storage folder defined</source>
+			</trans-unit>
+			<trans-unit id="configuration.pid.description">
+				<source>You can't create new records because no storage folder is defined. Choose a storage folder in the page tree or set the storage folder in the extension configuration.</source>
 			</trans-unit>
 		</body>
 	</file>

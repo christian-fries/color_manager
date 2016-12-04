@@ -3,11 +3,11 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2016-12-01T19:11:24Z" product-name="color_manager">
 		<header/>
 		<body>
-			<trans-unit id="title.description">
-				<source>title</source>
+			<trans-unit id="name.description">
+				<source>The name of the color. This name is only used to identify the color.</source>
 			</trans-unit>
 			<trans-unit id="color.description">
-				<source>color</source>
+				<source>The HEX value of the color.</source>
 			</trans-unit>
 		</body>
 	</file>

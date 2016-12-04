@@ -18,40 +18,36 @@ namespace CHF\ColorManager\Domain\Model;
 class Color extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
     /**
-     * title
-     *
      * @var string
      * @validate NotEmpty
      */
-    protected $title = '';
+    protected $name = '';
 
     /**
-     * color
-     *
      * @var string
      * @validate NotEmpty
      */
     protected $color = '';
 
     /**
-     * Returns the title
+     * Returns the name
      *
-     * @return string $title
+     * @return string $name
      */
-    public function getTitle()
+    public function getName()
     {
-        return $this->title;
+        return $this->name;
     }
 
     /**
-     * Sets the title
+     * Sets the name
      *
-     * @param string $title
+     * @param string $name
      * @return void
      */
-    public function setTitle($title)
+    public function setName($name)
     {
-        $this->title = $title;
+        $this->name = $name;
     }
 
     /**

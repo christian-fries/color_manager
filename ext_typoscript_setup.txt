@@ -1,0 +1,8 @@
+# Module configuration
+module.tx_colormanager_tools_admin {
+    view {
+        templateRootPaths.0 = EXT:color_manager/Resources/Private/Templates/
+        partialRootPaths.0 = EXT:color_manager/Resources/Private/Partials/
+        layoutRootPaths.0 = EXT:color_manager/Resources/Private/Layouts/
+    }
+}

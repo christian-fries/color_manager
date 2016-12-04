@@ -6,7 +6,7 @@ CREATE TABLE tx_colormanager_domain_model_color (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 
-	title text NOT NULL,
+	name varchar(255) DEFAULT '' NOT NULL,
 	color varchar(255) DEFAULT '' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
@@ -17,5 +17,14 @@ CREATE TABLE tx_colormanager_domain_model_color (
 	sys_language_uid int(11) DEFAULT '0' NOT NULL,
 
 	PRIMARY KEY (uid),
+
+);
+
+#
+# Table structure for table 'pages'
+#
+CREATE TABLE pages (
+
+	color varchar(255) DEFAULT '' NOT NULL,
 
 );

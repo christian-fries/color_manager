@@ -6,14 +6,26 @@
 			<trans-unit id="tx_colormanager_domain_model_color">
 				<source>Color</source>
 			</trans-unit>
-			<trans-unit id="tx_colormanager_domain_model_color.title">
-				<source>Title</source>
+			<trans-unit id="tx_colormanager_domain_model_color.name">
+				<source>Name</source>
 			</trans-unit>
 			<trans-unit id="tx_colormanager_domain_model_color.color">
 				<source>Color</source>
 			</trans-unit>
 			<trans-unit id="tx_colormanager_domain_model_color.color.choose">
 				<source>Choose a color</source>
+			</trans-unit>
+			<trans-unit id="color.palette.title">
+				<source>Color</source>
+			</trans-unit>
+			<trans-unit id="extmng.subcategory.storage">
+				<source>Storage</source>
+			</trans-unit>
+			<trans-unit id="extmng.globalStoragePid">
+				<source>Global storage pid:Define the pid where color records are stored.</source>
+			</trans-unit>
+			<trans-unit id="extmng.showAdministrationModule">
+				<source>Show administration module</source>
 			</trans-unit>
 		</body>
 	</file>

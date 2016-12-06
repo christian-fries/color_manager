@@ -35,3 +35,7 @@ call_user_func(
     },
     $_EXTKEY
 );
+
+// Register hooks
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass'][] = 'CHF\ColorManager\Hook\TcaHook';
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processCmdmapClass'][] = 'CHF\ColorManager\Hook\TcaHook';

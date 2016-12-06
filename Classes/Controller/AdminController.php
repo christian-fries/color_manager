@@ -11,6 +11,7 @@ namespace CHF\ColorManager\Controller;
  *  (c) 2016 Christian Fries <hallo@christian-fries.ch>
  *
  ***/
+
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Backend\View\BackendTemplateView;
 use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;

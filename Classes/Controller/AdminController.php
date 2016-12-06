@@ -12,7 +12,6 @@ namespace CHF\ColorManager\Controller;
  *
  ***/
 
-use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Backend\View\BackendTemplateView;
 use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;
 use CHF\BackendModule\Controller\BackendModuleActionController;
@@ -61,8 +60,7 @@ class AdminController extends BackendModuleActionController
         $this->setButtons([
             $this->createNewRecordButton(
                 'tx_colormanager_domain_model_color',
-                $this->getLanguageService()->sL('LLL:EXT:color_manager/Resources/Private/Language/locallang.xlf:color.new'),
-                'actions-document-new'
+                $this->getLanguageService()->sL('LLL:EXT:color_manager/Resources/Private/Language/locallang.xlf:color.new')
             )
         ]);
 

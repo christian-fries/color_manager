@@ -19,7 +19,7 @@ call_user_func(
                     ],
                     [
                         'access' => 'user,group',
-                        'icon'   => 'EXT:' . $extKey . '/Resources/Public/Icons/module-admin.svg',
+                        'icon'   => 'EXT:' . $extKey . '/Resources/Public/Icons/module-admin.png',
                         'labels' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_admin.xlf',
                     ]
                 );

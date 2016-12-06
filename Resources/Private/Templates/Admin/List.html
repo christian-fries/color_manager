@@ -18,7 +18,9 @@
 				<thead>
 					<tr>
 						<th class="col-icon" width="35">
-							<bm:button.addRecord table="tx_colormanager_domain_model_color" pid="{storagePid}" returnUrl="{returnUrl}" />
+							<f:if condition="{storagePid}">
+								<bm:button.addRecord table="tx_colormanager_domain_model_color" pid="{storagePid}" returnUrl="{returnUrl}" />
+							</f:if>
 						</th>
 						<th><f:translate key="color.name" /></th>
 						<th><f:translate key="color.color" /></th>

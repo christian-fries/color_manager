@@ -3,7 +3,8 @@
 	"type": "typo3-cms-extension",
 	"description": "TYPO3 Color Manager",
 	"require": {
-		"typo3/cms": ">=7.6.0"
+		"typo3/cms": ">=7.6.0",
+		"chf/backend-module": "*"
 	},
 	"autoload": {
 		"psr-4": {

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2016-12-01T19:11:24Z" product-name="color_manager">
+		<header/>
+		<body>
+			<trans-unit id="color">
+				<source>Color</source>
+				<target>Farbe</target>
+			</trans-unit>
+			<trans-unit id="color.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="color.color">
+				<source>Color</source>
+				<target>Farbe</target>
+			</trans-unit>
+			<trans-unit id="color.colors">
+				<source>Colors</source>
+				<target>Farben</target>
+			</trans-unit>
+			<trans-unit id="color.new">
+				<source>Create new color</source>
+				<target>Neue Farbe erstellen</target>
+			</trans-unit>
+			<trans-unit id="configuration.pid.title">
+				<source>No storage folder defined</source>
+				<target>Keine Speicher Pid definiert</target>
+			</trans-unit>
+			<trans-unit id="configuration.pid.description">
+				<source>You can't create new records because no storage folder is defined. Choose a storage folder in the page tree or set the storage folder in the extension configuration.</source>
+				<target>Es können keine Records erstellt werden da keine Speicher Pid definiert ist. Lassen Sie die Speicher Pid von einem Administrator in den Erweiterungseinstellungen konfigurieren.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

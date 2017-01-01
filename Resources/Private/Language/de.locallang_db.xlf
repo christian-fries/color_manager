@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2016-12-01T19:11:24Z" product-name="color_manager">
+		<header/>
+		<body>
+			<trans-unit id="tx_colormanager_domain_model_color">
+				<source>Color</source>
+				<target>Farbe</target>
+			</trans-unit>
+			<trans-unit id="tx_colormanager_domain_model_color.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_colormanager_domain_model_color.color">
+				<source>Color</source>
+				<target>Farbe</target>
+			</trans-unit>
+			<trans-unit id="tx_colormanager_domain_model_color.color.choose">
+				<source>Choose a color</source>
+				<target>Farbe wählen</target>
+			</trans-unit>
+			<trans-unit id="color.palette.title">
+				<source>Color</source>
+				<target>Farbe</target>
+			</trans-unit>
+			<trans-unit id="extmng.subcategory.storage">
+				<source>Storage</source>
+				<target>Speicher</target>
+			</trans-unit>
+			<trans-unit id="extmng.globalStoragePid">
+				<source>Global storage pid:Define the pid where color records are stored.</source>
+				<target>Globale Speicher Pid:Definiert systemweit, wo die Records gespeichert werden.</target>
+			</trans-unit>
+			<trans-unit id="extmng.showAdministrationModule">
+				<source>Show administration module</source>
+				<target>Administrationsmodul anzeigen</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

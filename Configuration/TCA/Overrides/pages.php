@@ -15,6 +15,7 @@ $additional_pages_columns = [
                 [ 'LLL:EXT:color_manager/Resources/Private/Language/locallang_db.xlf:tx_colormanager_domain_model_color.color.choose', '' ]
             ],
             'foreign_table' => 'tx_colormanager_domain_model_color',
+            'foreign_table_where' => 'ORDER BY tx_colormanager_domain_model_color.name',
             'default' => ''
         ],
     ],

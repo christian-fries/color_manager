@@ -28,36 +28,27 @@ return [
             ],
         ],
 
-	    'name' => [
-	        'exclude' => 0,
-	        'label' => 'LLL:EXT:color_manager/Resources/Private/Language/locallang_db.xlf:tx_colormanager_domain_model_color.name',
-	        'config' => [
-			    'type' => 'input',
+        'name' => [
+            'exclude' => 0,
+            'label' => 'LLL:EXT:color_manager/Resources/Private/Language/locallang_db.xlf:tx_colormanager_domain_model_color.name',
+            'config' => [
+                'type' => 'input',
                 'size' => 30,
-			    'eval' => 'trim,required'
-			]
-	        
-	    ],
-	    'color' => [
-	        'exclude' => 0,
-	        'label' => 'LLL:EXT:color_manager/Resources/Private/Language/locallang_db.xlf:tx_colormanager_domain_model_color.color',
-	        'config' => [
-			    'type' => 'input',
-			    'size' => 10,
-			    'eval' => 'trim,required',
-                'wizards' => array(
-                    'colorChoice' => array(
-                        'type' => 'colorbox',
-                        'title' => 'LLL:EXT:color_manager/Resources/Private/Language/locallang_db.xlf:tx_colormanager_domain_model_color.color.choose',
-                        'module' => array(
-                            'name' => 'wizard_colorpicker',
-                        ),
-                        'JSopenParams' => 'height=600,width=380,status=0,menubar=0,scrollbars=1',
-                    )
-                )
-			],
-	        
-	    ],
-        
+                'eval' => 'trim,required'
+            ]
+
+        ],
+        'color' => [
+            'exclude' => 0,
+            'label' => 'LLL:EXT:color_manager/Resources/Private/Language/locallang_db.xlf:tx_colormanager_domain_model_color.color',
+            'config' => [
+                'type' => 'input',
+                'size' => 10,
+                'eval' => 'trim,required',
+                'renderType' => 'colorpicker'
+            ],
+
+        ],
+
     ],
 ];

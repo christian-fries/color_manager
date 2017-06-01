@@ -12,12 +12,15 @@ namespace CHF\ColorManager\Domain\Repository;
  *
  ***/
 
+use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+use TYPO3\CMS\Extbase\Persistence\Repository;
+
 /**
  * The repository for Colors
  */
-class ColorRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
+class ColorRepository extends Repository
 {
     protected $defaultOrderings = array(
-        'name' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING
+        'name' => QueryInterface::ORDER_ASCENDING
     );
 }

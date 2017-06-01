@@ -1,6 +1,8 @@
 <?php
 namespace CHF\ColorManager\UserFunc;
 
+use TYPO3\CMS\Backend\Utility\BackendUtility;
+
 /***
  *
  * This file is part of the "Color Manager" Extension for TYPO3 CMS.
@@ -16,7 +18,7 @@ class Tca
 {
     public function colorTitle(&$parameters, $parentObject)
     {
-        $record = \TYPO3\CMS\Backend\Utility\BackendUtility::getRecord($parameters['table'], $parameters['row']['uid']);
+        $record = BackendUtility::getRecord($parameters['table'], $parameters['row']['uid']);
         $defaultTitle = $record['name'];
         $newTitle = $defaultTitle . ' (' . strip_tags($record['color']) . ')';
         $parameters['title'] = $newTitle;

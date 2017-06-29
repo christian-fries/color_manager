@@ -50,8 +50,6 @@ class AdminController extends BackendModuleActionController
      * @return void
      */
     public function initializeAction() {
-        parent::initializeAction();
-
         $this->extKey = 'color_manager';
         $this->moduleName = 'tools_ColorManagerAdmin';
         $this->showConfigurationButton = true;
@@ -59,25 +57,14 @@ class AdminController extends BackendModuleActionController
         $extConf = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['color_manager']);
         $this->pageUid = intval($extConf['globalStoragePid']);
 
+        parent::initializeAction();
+
         $this->setButtons([
             $this->createNewRecordButton(
                 'tx_colormanager_domain_model_color',
                 $this->getLanguageService()->sL('LLL:EXT:color_manager/Resources/Private/Language/locallang.xlf:color.new')
             )
         ]);
-
-        if ($this->pageUid == 0) {
-            $message = GeneralUtility::makeInstance('TYPO3\\CMS\\Core\\Messaging\\FlashMessage',
-                $this->getLanguageService()->sL('LLL:EXT:color_manager/Resources/Private/Language/locallang.xlf:configuration.pid.description'),
-                $this->getLanguageService()->sL('LLL:EXT:color_manager/Resources/Private/Language/locallang.xlf:configuration.pid.title'),
-                \TYPO3\CMS\Core\Messaging\FlashMessage::WARNING,
-                TRUE
-            );
-
-            $flashMessageService = $this->objectManager->get(FlashMessageService::class);
-            $messageQueue = $flashMessageService->getMessageQueueByIdentifier();
-            $messageQueue->addMessage($message);
-        }
     }
 
     /**

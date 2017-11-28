@@ -6,9 +6,9 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'be',
     'author' => 'Christian Fries',
     'author_email' => 'hallo@christian-fries.ch',
-    'state' => 'alpha',
+    'state' => 'stable',
     'clearCacheOnLoad' => 1,
-    'version' => '0.2.1',
+    'version' => '0.3.0',
     'constraints' => [
         'depends' => [
             'typo3' => '7.6.0-8.7.99',
@@ -18,6 +18,6 @@ $EM_CONF[$_EXTKEY] = [
         'suggests' => [],
     ],
     'autoload' => [
-        'classmap' => array('Classes')
+        'classmap' => ['Classes']
     ],
 ];

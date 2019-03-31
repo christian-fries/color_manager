@@ -36,27 +36,16 @@ return [
                 'size' => 30,
                 'eval' => 'trim,required'
             ]
-
         ],
         'color' => [
             'exclude' => 0,
             'label' => 'LLL:EXT:color_manager/Resources/Private/Language/locallang_db.xlf:tx_colormanager_domain_model_color.color',
             'config' => [
                 'type' => 'input',
+                'renderType' => 'colorpicker',
                 'size' => 10,
                 'eval' => 'trim,required',
-                'wizards' => [
-                    'colorChoice' => [
-                        'type' => 'colorbox',
-                        'title' => 'LLL:EXT:color_manager/Resources/Private/Language/locallang_db.xlf:tx_colormanager_domain_model_color.color.choose',
-                        'module' => [
-                            'name' => 'wizard_colorpicker',
-                        ],
-                        'JSopenParams' => 'height=600,width=380,status=0,menubar=0,scrollbars=1',
-                    ]
-                ]
             ],
-
         ],
     ],
 ];

@@ -10,5 +10,4 @@ if (\TYPO3\CMS\Core\Utility\VersionNumberUtility::convertVersionNumberToInteger(
         'eval' => 'trim,required',
         'renderType' => 'colorpicker'
     ];
-
 }

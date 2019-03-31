@@ -1,4 +1,5 @@
 <?php
+
 namespace CHF\ColorManager\Domain\Model;
 
 /***

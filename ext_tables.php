@@ -2,13 +2,11 @@
 defined('TYPO3_MODE') || die('Access denied.');
 
 call_user_func(
-    function($extKey)
-    {
+    function ($extKey) {
         $settings = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['color_manager']);
 
         if (TYPO3_MODE === 'BE') {
-            if ($settings['showAdministrationModule'])
-            {
+            if ($settings['showAdministrationModule']) {
                 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
                     'CHF.ColorManager',
                     'tools', // Make module a submodule of 'tools'

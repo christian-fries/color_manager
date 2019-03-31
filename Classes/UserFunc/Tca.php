@@ -1,4 +1,5 @@
 <?php
+
 namespace CHF\ColorManager\UserFunc;
 
 use TYPO3\CMS\Backend\Utility\BackendUtility;

@@ -1,4 +1,5 @@
 <?php
+
 namespace CHF\ColorManager\Controller;
 
 /***
@@ -12,11 +13,9 @@ namespace CHF\ColorManager\Controller;
  *
  ***/
 
-use TYPO3\CMS\Backend\View\BackendTemplateView;
-use TYPO3\CMS\Core\Messaging\FlashMessageService;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;
 use CHF\BackendModule\Controller\BackendModuleActionController;
+use TYPO3\CMS\Backend\View\BackendTemplateView;
+use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;
 
 /**
  * Controller for the backend module
@@ -49,7 +48,8 @@ class AdminController extends BackendModuleActionController
      *
      * @return void
      */
-    public function initializeAction() {
+    public function initializeAction()
+    {
         $this->extKey = 'color_manager';
         $this->moduleName = 'tools_ColorManagerAdmin';
         $this->showConfigurationButton = true;

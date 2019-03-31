@@ -1,4 +1,5 @@
 <?php
+
 namespace CHF\ColorManager\Hook;
 
 /***
@@ -12,8 +13,8 @@ namespace CHF\ColorManager\Hook;
  *
  ***/
 
-class TcaHook {
-
+class TcaHook
+{
     /**
      * Hook executed when creating or updating record
      *
@@ -26,25 +27,22 @@ class TcaHook {
     public function processDatamap_postProcessFieldArray($status, $table, $id, array &$fieldArray, \TYPO3\CMS\Core\DataHandling\DataHandler &$pObj)
     {
         // If selected color on pages record changed, change color value in db
-        if ($table === 'pages' && array_key_exists('tx_colormanager_color_uid', $fieldArray))
-        {
-            if (!empty($fieldArray['tx_colormanager_color_uid']))
-            {
-               $record = $this->getDatabaseConnection()->exec_SELECTgetSingleRow(
+        if ($table === 'pages' && array_key_exists('tx_colormanager_color_uid', $fieldArray)) {
+            if (!empty($fieldArray['tx_colormanager_color_uid'])) {
+                $record = $this->getDatabaseConnection()->exec_SELECTgetSingleRow(
                     'color',
                     'tx_colormanager_domain_model_color',
-                    'uid = ' . (int)$fieldArray['tx_colormanager_color_uid']);
+                    'uid = ' . (int)$fieldArray['tx_colormanager_color_uid']
+               );
 
                 $fieldArray['tx_colormanager_color'] = $record['color'];
-            }
-            else {
+            } else {
                 $fieldArray['tx_colormanager_color'] = '';
             }
         }
 
         // If color on color record changed, update all pages referencing that color
-        if ($table === 'tx_colormanager_domain_model_color' && array_key_exists('color', $fieldArray))
-        {
+        if ($table === 'tx_colormanager_domain_model_color' && array_key_exists('color', $fieldArray)) {
             $this->getDatabaseConnection()->exec_UPDATEquery(
                 'pages',
                 'tx_colormanager_color_uid = ' . $id,
@@ -64,10 +62,9 @@ class TcaHook {
      * @param null $recordWasDeleted
      * @param \TYPO3\CMS\Core\DataHandling\DataHandler $pObj
      */
-    public function processCmdmap_deleteAction($table, $id, $recordToDelete, $recordWasDeleted=NULL, \TYPO3\CMS\Core\DataHandling\DataHandler &$pObj)
+    public function processCmdmap_deleteAction($table, $id, $recordToDelete, $recordWasDeleted=null, \TYPO3\CMS\Core\DataHandling\DataHandler &$pObj)
     {
-        if ($table === 'tx_colormanager_domain_model_color')
-        {
+        if ($table === 'tx_colormanager_domain_model_color') {
             $this->getDatabaseConnection()->exec_UPDATEquery(
                 'pages',
                 'tx_colormanager_color_uid = ' . $id,

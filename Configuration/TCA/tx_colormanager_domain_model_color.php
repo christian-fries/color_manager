@@ -45,16 +45,16 @@ return [
                 'type' => 'input',
                 'size' => 10,
                 'eval' => 'trim,required',
-                'wizards' => array(
-                    'colorChoice' => array(
+                'wizards' => [
+                    'colorChoice' => [
                         'type' => 'colorbox',
                         'title' => 'LLL:EXT:color_manager/Resources/Private/Language/locallang_db.xlf:tx_colormanager_domain_model_color.color.choose',
-                        'module' => array(
+                        'module' => [
                             'name' => 'wizard_colorpicker',
-                        ),
+                        ],
                         'JSopenParams' => 'height=600,width=380,status=0,menubar=0,scrollbars=1',
-                    )
-                )
+                    ]
+                ]
             ],
 
         ],

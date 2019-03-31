@@ -15,9 +15,6 @@ namespace CHF\ColorManager\Domain\Model;
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
-/**
- * Color
- */
 class Color extends AbstractEntity
 {
     /**

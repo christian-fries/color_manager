@@ -17,9 +17,6 @@ use CHF\BackendModule\Controller\BackendModuleActionController;
 use TYPO3\CMS\Backend\View\BackendTemplateView;
 use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;
 
-/**
- * Controller for the backend module
- */
 class AdminController extends BackendModuleActionController
 {
     /**

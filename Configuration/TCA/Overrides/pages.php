@@ -1,9 +1,6 @@
 <?php
 defined('TYPO3_MODE') || die();
 
-/***************
- * Add navigation layout to pages model
- */
 $additional_pages_columns = [
     'tx_colormanager_color_uid' => [
         'exclude' => 1,

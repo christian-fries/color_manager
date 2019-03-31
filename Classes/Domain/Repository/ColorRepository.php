@@ -16,9 +16,6 @@ namespace CHF\ColorManager\Domain\Repository;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 
-/**
- * The repository for Colors
- */
 class ColorRepository extends Repository
 {
     protected $defaultOrderings = [
